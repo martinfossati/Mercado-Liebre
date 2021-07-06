@@ -17,7 +17,7 @@ body {
     padding: 20px;
 }
 
-.boton-hamburguesa{
+.burger-menu{
     background-color: #0044AA;
     color: white;
     display: block;
@@ -163,6 +163,10 @@ footer {
     height: 50px;
 }
 
+.footer-icons:hover {
+    color: #34a8eb;
+}
+
 #copyright {
     margin: 0;
     text-align: center;
@@ -181,6 +185,7 @@ footer {
     border: 1px #FFF solid;
     border-radius: 5px;
     width: 100%;
+    text-align: left;
 }
 
 .control-formulario {
@@ -248,6 +253,9 @@ input#vendedor {
     .nombre-producto {
         display: none;
     }
+    .formulario-login input, .formulario-login button {
+        width: 90%;
+    }
 }
 @media (min-width: 361px) {
     .logo {
@@ -261,6 +269,12 @@ input#vendedor {
     }
     .nombre-producto {
         display: block;
+    }
+    .formulario-login input, .formulario-login button {
+        width: 90%;
+    }
+    .boton-login {
+        padding-bottom: 50px;
     }
 }
 @media (min-width: 769px) {
@@ -357,5 +371,11 @@ input#vendedor {
     .productos:hover {
         overflow: hidden;
         padding-bottom: 40px;
+    }
+    .formulario-login input, .formulario-login button {
+        width: 45%;
+    }
+    .boton-login {
+        padding-bottom: 245px;
     }
 }
